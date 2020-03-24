@@ -216,7 +216,7 @@ export const Pick = PodsDFVFieldLayout.extend( {
 
 		modalIFrame = new IframeFrame( {
 			title: fieldConfig.iframe_title_add,
-			src: fieldConfig.iframe_src
+			src: fieldConfig.iframe_src + '&' + fieldConfig.pod + '_id=' + fieldConfig.item_id
 		} );
 
 		this.setModalListeners();
